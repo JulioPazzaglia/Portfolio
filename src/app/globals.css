@@ -4,24 +4,29 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 9, 10, 19;
+    --background-end-rgb: 37, 53, 88;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 9, 10, 19;
+      --background-end-rgb: 37, 53, 88;
+      --secondary-green-rgb: 98, 219, 175;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
+      to bottom right,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.fade {
+  background: linear-gradient(to left, transparent, rgb(var(--secondary-green-rgb), 0.2), rgb(var(--secondary-green-rgb), 0.4), rgb(var(--secondary-green-rgb), 0.8))
 }
