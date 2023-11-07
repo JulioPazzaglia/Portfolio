@@ -13,7 +13,8 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 9, 10, 19;
       --background-end-rgb: 37, 53, 88;
-      --secondary-green-rgb: 98, 219, 175;
+      --base-green-rgb: 98, 219, 175, 0.69;
+        --faded-green-rgb: 98, 219, 175, 0.21;
   }
 }
 
@@ -27,6 +28,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.fade {
-  background: linear-gradient(to left, transparent, rgb(var(--secondary-green-rgb), 0.2), rgb(var(--secondary-green-rgb), 0.4), rgb(var(--secondary-green-rgb), 0.8))
+.NavbarFade {
+  background: linear-gradient(150deg, rgba(var(--base-green-rgb)) 7%, rgba(var(--base-green-rgb)) 50%, rgba(249, 249, 249, 0.00) 85%);
+}
+
+.BannerFade {
+  background: linear-gradient(150deg, rgba(var(--faded-green-rgb)) 7%, rgba(var(--faded-green-rgb)) 40%, rgba(249, 249, 249, 0.00) 75%);
 }

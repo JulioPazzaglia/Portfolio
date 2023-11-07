@@ -15,6 +15,12 @@ module.exports = {
       colors: {
         'fade': '#3f3cbb'
       },
+      rotate: {
+        '135': '135deg',
+      },
+      scale: {
+        '-100': '-1',
+    },
     },
   },
   plugins: [],
