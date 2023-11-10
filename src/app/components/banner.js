@@ -1,7 +1,7 @@
 export default function TitleBanner() {
   return (
-    <div className='BannerFade rounded-3xl grid grid-cols-2'>
-      <div className='p-12'>
+    <div className='BannerFadeLeft rounded-3xl grid grid-cols-2'>
+      <div className='col-span-2 md:col-span-1 p-12'>
         <h1 className='text-3xl lg:text-5xl sm:text-4xl py-2'>Julio</h1>
         <h2 className='text-3xl lg:text-5xl sm:text-4xl py-2 pl-8'>
           Pazzaglia

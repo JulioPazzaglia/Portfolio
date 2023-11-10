@@ -32,6 +32,9 @@ body {
   background: linear-gradient(150deg, rgba(var(--base-green-rgb)) 7%, rgba(var(--base-green-rgb)) 50%, rgba(249, 249, 249, 0.00) 85%);
 }
 
-.BannerFade {
+.BannerFadeLeft {
   background: linear-gradient(150deg, rgba(var(--faded-green-rgb)) 7%, rgba(var(--faded-green-rgb)) 40%, rgba(249, 249, 249, 0.00) 75%);
+}
+.BannerFadeRight {
+  background: linear-gradient(210deg, rgba(var(--faded-green-rgb)) 7%, rgba(var(--faded-green-rgb)) 40%, rgba(249, 249, 249, 0.00) 75%);
 }

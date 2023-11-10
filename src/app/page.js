@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar";
-import ProjectLabel from "./components/projectLabel";
+import ProjectLabelLeft from "./components/projectLabelLeft";
+import ProjectLabelRight from "./components/projectLabelRight";
 import TitleBanner from "./components/banner";
 import BackgroundDetails from "./components/backgroundDetails";
 
@@ -13,18 +14,18 @@ export default function Home() {
       <div className='p-4 w-4/5 p-12 mt-56 mt-24'>
         <TitleBanner />
       </div>
-      <div className='w-full p-8 grid grid-cols-3 gap-12 mt-36'>
-        <div className='col-start-2 col-span-2'>
-          <ProjectLabel />
+      <div className='w-full px-10 md:px-40 grid grid-cols-3 gap-y-20 my-40'>
+        <div className='col-start-1 md:col-start-2 col-span-3'>
+          <ProjectLabelRight />
         </div>
-        <div className='col-start-1 col-span-2 transform'>
-          <ProjectLabel />
+        <div className='col-start-1 col-span-3 md:col-span-2'>
+          <ProjectLabelLeft />
         </div>
-        <div className='col-start-2 col-span-2 '>
-          <ProjectLabel />
+        <div className='col-start-1 md:col-start-2 col-span-3'>
+          <ProjectLabelRight />
         </div>
-        <div className='col-start-1 col-span-2'>
-          <ProjectLabel />
+        <div className='col-start-1 col-span-3 md:col-span-2'>
+          <ProjectLabelLeft />
         </div>
       </div>
     </main>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Dashboard() {
   return (
-    <nav class='NavbarFade fixed w-full rounded-bl-xl flex flex-row items-center'>
+    <nav className='NavbarFade fixed w-full rounded-bl-xl flex flex-row items-center'>
       <Link href={"./"}>
         {/* Scroll to top?? */}
         <Image
