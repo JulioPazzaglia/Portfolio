@@ -13,14 +13,12 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'fade': '#3f3cbb'
+        'baseGreen': 'rgba(98, 219, 175, 0.3)',
+        'middleGreen': 'rgba(98, 219, 175, 0.04)'
       },
       rotate: {
         '135': '135deg',
       },
-      scale: {
-        '-100': '-1',
-    },
     },
   },
   plugins: [],

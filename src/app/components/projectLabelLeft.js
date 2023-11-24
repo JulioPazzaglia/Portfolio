@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function projectLabelLeft() {
   return (
-    <div className='flex-col-reverse lg:flex-row  BannerFadeLeft p-4 rounded-lg flex'>
+    <div className='flex-col-reverse lg:flex-row BannerFadeLeft p-4 rounded-lg flex'>
       <Image
         src={"/assets/placeholderProjecto1.png"}
         alt='logo'
