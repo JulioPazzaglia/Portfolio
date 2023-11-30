@@ -2,6 +2,7 @@ import Image from "next/image";
 
 export default function Interests({ image, name }) {
   console.log(image);
+  //console
   return (
     <div className='bg-gradient-to-t from-baseGreen via-middleGreen to-transparent p-4 rounded-lg'>
       <div className='flex justify-center items-center flex-col px-8'>
