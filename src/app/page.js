@@ -14,6 +14,12 @@ import {
   skateData,
 } from "../../public/data/interestData";
 
+import {
+  bambaData,
+  shipMathData,
+  portfolioData,
+} from "../../public/data/proyectsData";
+
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center'>
@@ -26,13 +32,31 @@ export default function Home() {
       </div>
       <div className='w-full px-10 md:px-40 grid grid-cols-3 gap-y-20 my-40'>
         <div className='col-start-1 md:col-start-2 col-span-3'>
-          <ProjectLabelRight />
+          <ProjectLabelRight
+            title={bambaData.title}
+            subtitle={bambaData.subtitle}
+            linkto={bambaData.linkTo}
+            link={bambaData.link}
+            image={bambaData.image}
+          />
         </div>
         <div className='col-start-1 col-span-3 md:col-span-2'>
-          <ProjectLabelLeft />
+          <ProjectLabelLeft
+            title={shipMathData.title}
+            subtitle={shipMathData.subtitle}
+            linkto={shipMathData.linkTo}
+            link={shipMathData.link}
+            image={shipMathData.image}
+          />
         </div>
         <div className='col-start-1 md:col-start-2 col-span-3'>
-          <ProjectLabelRight />
+          <ProjectLabelRight
+            title={portfolioData.title}
+            subtitle={portfolioData.subtitle}
+            linkto={portfolioData.linkTo}
+            link={portfolioData.link}
+            image={portfolioData.image}
+          />
         </div>
       </div>
       <div className='px-10 md:px-40 my-20'>
