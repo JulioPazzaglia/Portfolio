@@ -5,6 +5,7 @@ import TitleBanner from "./components/banner";
 import BackgroundDetails from "./components/backgroundDetails";
 import AboutMeLabel from "./components/aboutMeLabel";
 import Interests from "./components/Interests";
+import ContactMe from "./components/contactMe";
 
 import {
   tabletopData,
@@ -34,7 +35,7 @@ export default function Home() {
           <ProjectLabelRight />
         </div>
       </div>
-      <div className='px-20 md:px-40 my-20'>
+      <div className='px-10 md:px-40 my-20'>
         <AboutMeLabel />
       </div>
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 px-10 md:px-40 my-20'>
@@ -43,8 +44,8 @@ export default function Home() {
         <Interests image={filmData.image} name={filmData.name} />
         <Interests image={skateData.image} name={skateData.name} />
       </div>
-      <div className='w-full my-20'>
-        <AboutMeLabel />
+      <div className='w-full mt-20'>
+        <ContactMe />
       </div>
     </main>
   );
