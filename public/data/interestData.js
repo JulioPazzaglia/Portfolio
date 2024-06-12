@@ -1,10 +1,10 @@
 const tabletopData = {
   image: "/assets/interests/TTRPG.png",
-  name: "Films, Tv & Youtube",
+  name: "Table top RPGs and board games",
 };
 const gamesData = {
   image: "/assets/interests/Games.png",
-  name: "Films, Tv & Youtube",
+  name: "Video games and game design",
 };
 const filmData = {
   image: "/assets/interests/Film.png",

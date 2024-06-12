@@ -1,3 +1,8 @@
+"use client";
+import { createContext } from "react";
+
+const Context = createContext();
+
 import Navbar from "./components/navbar";
 import ProjectLabelLeft from "./components/projectLabelLeft";
 import ProjectLabelRight from "./components/projectLabelRight";
@@ -30,7 +35,10 @@ export default function Home() {
       <div className='p-4 w-4/5 p-12 mt-56 mt-24'>
         <TitleBanner />
       </div>
-      <div className='w-full px-10 md:px-40 grid grid-cols-3 gap-y-20 my-40'>
+      <div
+        className='w-full px-10 md:px-40 grid grid-cols-3 gap-y-20 my-40'
+        id='projects'
+      >
         <div className='col-start-1 md:col-start-2 col-span-3'>
           <ProjectLabelRight
             title={bambaData.title}
@@ -59,7 +67,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className='px-10 md:px-40 my-20'>
+      <div className='px-10 md:px-40 my-20' id='aboutMe'>
         <AboutMeLabel />
       </div>
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 px-10 md:px-40 my-20'>
@@ -68,7 +76,7 @@ export default function Home() {
         <Interests image={filmData.image} name={filmData.name} />
         <Interests image={skateData.image} name={skateData.name} />
       </div>
-      <div className='w-full mt-20'>
+      <div className='w-full mt-20' id='contactMe'>
         <ContactMe />
       </div>
     </main>

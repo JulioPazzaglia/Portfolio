@@ -1,5 +1,5 @@
 "use client";
-
+//FALTA EL HOVER DE LOS BOTONES PARA QUE DIGAN QUE ES CAPAZ HACERLO MAS CHETO Y MAS CHETO EL ALERT
 import Link from "next/link";
 import Image from "next/image";
 
@@ -22,7 +22,7 @@ export default function ContactMe() {
               className='pt-5 pb-2'
             />
           </Link>
-          <Link href='https://github.com/juliopazzaglia' className='px-2'>
+          <Link href='https://github.com/juliopazzaglia' target='_blank' className='px-2'>
             <Image
               src='/assets/contact/github.png'
               alt='details'
@@ -33,6 +33,7 @@ export default function ContactMe() {
           </Link>
           <Link
             href='https://www.linkedin.com/in/julio-pazzaglia/'
+            target='_blank'
             className='px-2'
           >
             <Image
@@ -45,6 +46,7 @@ export default function ContactMe() {
           </Link>
           <Link
             href='https://drive.google.com/uc?export=download&id=1A84dO8k0Ky7dHBRb2LMReM9Gk9b2xJWj'
+            target='_blank'
             className='px-2'
           >
             <Image

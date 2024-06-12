@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 9, 10, 19;
@@ -29,12 +33,14 @@ body {
 }
 
 .NavbarFade {
+  z-index:1;
   background: linear-gradient(150deg, rgba(98, 219, 175, 0.69) 7%, rgba(98, 219, 175, 0.69) 50%, rgba(249, 249, 249, 0.00) 85%);
 }
 
 .BannerFadeLeft {
-  background: linear-gradient(150deg, rgba(var(--faded-green-rgb)) 7%, rgba(var(--faded-green-rgb)) 40%, rgba(249, 249, 249, 0.00) 75%);
+  background: linear-gradient(150deg, rgba(var(--faded-green-rgb)) 7%, rgba(var(--faded-green-rgb)) 40%, rgba(249, 249, 249, 0.00) 75%); 
 }
+
 .BannerFadeRight {
   background: linear-gradient(210deg, rgba(var(--faded-green-rgb)) 7%, rgba(var(--faded-green-rgb)) 40%, rgba(249, 249, 249, 0.00) 75%);
 }

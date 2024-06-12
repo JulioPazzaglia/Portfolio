@@ -14,9 +14,15 @@ export default function Dashboard() {
           className='p-4'
         />
       </Link>
-      <h1 className='p-4'>Projects</h1>
-      <h1 className='p-4'>About me</h1>
-      <h1 className='p-4'>Contact me</h1>
+      <h1 className='p-4'>
+        <Link href={"#projects"}>Projects</Link>
+      </h1>
+      <h1 className='p-4'>
+        <Link href={"#aboutMe"}>About me</Link>
+      </h1>
+      <h1 className='p-4'>
+        <Link href={"#contactMe"}>Contact me</Link>
+      </h1>
     </nav>
   );
 }

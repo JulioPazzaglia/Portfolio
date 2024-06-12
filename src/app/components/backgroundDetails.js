@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BackgroundDetails() {
   return (
-    <div className='w-full h-full absolute'>
+    <div className='w-full h-full absolute animate-pulse'>
       <Image
         src={"/assets/backgroundImages/backgroundImage2.png"}
         alt='details'
