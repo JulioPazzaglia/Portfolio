@@ -29,14 +29,11 @@ export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center'>
       <Navbar />
-      <div className='w-full absolute z-10'>
-        <BackgroundDetails />
-      </div>
-      <div className='p-4 w-4/5 p-12 mt-56 mt-24'>
+      <div className='p-4 w-4/5 p-12 mt-56 mt-24 z-20'>
         <TitleBanner />
       </div>
       <div
-        className='w-full px-10 md:px-40 grid grid-cols-3 gap-y-20 my-40'
+        className='w-full px-10 md:px-40 grid grid-cols-3 gap-y-20 my-40 pt-40 z-10'
         id='projects'
       >
         <div className='col-start-1 md:col-start-2 col-span-3'>
@@ -67,9 +64,10 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className='px-10 md:px-40 my-20' id='aboutMe'>
+      <div className='px-10 md:px-40 my-20 pt-40' id='aboutMe'>
         <AboutMeLabel />
       </div>
+      <h1 className='text-xl font-bold text-center'>Intereses</h1>
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 px-10 md:px-40 my-20'>
         <Interests image={tabletopData.image} name={tabletopData.name} />
         <Interests image={gamesData.image} name={gamesData.name} />
@@ -78,6 +76,9 @@ export default function Home() {
       </div>
       <div className='w-full mt-20' id='contactMe'>
         <ContactMe />
+      </div>
+      <div className='w-full absolute'>
+        <BackgroundDetails />
       </div>
     </main>
   );

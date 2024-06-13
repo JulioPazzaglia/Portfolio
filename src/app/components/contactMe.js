@@ -10,7 +10,7 @@ export default function ContactMe() {
         <h1 className='text-2xl font-bold text-center'>Contact me</h1>
         <div className='w-full flex flow-row justify-around'>
           <Link
-            href='https://w.app/JulioPazzaglia'
+            href='https://wa.me/2325423315'
             target='_blank'
             className='px-2'
           >
@@ -22,7 +22,11 @@ export default function ContactMe() {
               className='pt-5 pb-2'
             />
           </Link>
-          <Link href='https://github.com/juliopazzaglia' target='_blank' className='px-2'>
+          <Link
+            href='https://github.com/juliopazzaglia'
+            target='_blank'
+            className='px-2'
+          >
             <Image
               src='/assets/contact/github.png'
               alt='details'
@@ -45,7 +49,7 @@ export default function ContactMe() {
             />
           </Link>
           <Link
-            href='https://drive.google.com/uc?export=download&id=1A84dO8k0Ky7dHBRb2LMReM9Gk9b2xJWj'
+            href='https://drive.google.com/uc?export=download&id=1Cu_qKLTh6Exdco4n6npEweyPhdIOhPhX'
             target='_blank'
             className='px-2'
           >

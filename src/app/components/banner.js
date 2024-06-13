@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TitleBanner() {
   return (
     <div className='BannerFadeLeft rounded-3xl grid grid-cols-2'>
@@ -8,10 +10,13 @@ export default function TitleBanner() {
         </h2>
         <h3 className='lg:text-3xl text-2xl py-2'>Full Stack Developer</h3>
       </div>
-      <div className='flex flex-col pr-12 justify-center items-center invisible md:visible'>
+      <Link
+        href={"#projects"}
+        className='flex flex-col pr-12 justify-center items-center invisible md:visible'
+      >
         <h1 className='text-2xl'>My Work</h1>
         <h1 className='text-4xl'>➤</h1>
-      </div>
+      </Link>
     </div>
   );
 }

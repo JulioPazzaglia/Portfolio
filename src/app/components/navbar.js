@@ -3,9 +3,8 @@ import Link from "next/link";
 
 export default function Dashboard() {
   return (
-    <nav className='NavbarFade fixed w-full rounded-bl-xl flex flex-row items-center'>
+    <nav className='NavbarFade fixed w-full rounded-bl-xl flex flex-row items-center z-20'>
       <Link href={"./"}>
-        {/* Scroll to top?? */}
         <Image
           src={"/assets/LogoLataBlanco.png"}
           alt='logo'
@@ -14,15 +13,15 @@ export default function Dashboard() {
           className='p-4'
         />
       </Link>
-      <h1 className='p-4'>
-        <Link href={"#projects"}>Projects</Link>
-      </h1>
-      <h1 className='p-4'>
-        <Link href={"#aboutMe"}>About me</Link>
-      </h1>
-      <h1 className='p-4'>
-        <Link href={"#contactMe"}>Contact me</Link>
-      </h1>
+      <Link href={"#projects"}>
+        <h1 className='p-4'>Projects</h1>
+      </Link>
+      <Link href={"#aboutMe"}>
+        <h1 className='p-4'>About me</h1>
+      </Link>
+      <Link href={"#contactMe"}>
+        <h1 className='p-4'>Contact me</h1>
+      </Link>
     </nav>
   );
 }
