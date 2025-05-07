@@ -29,4 +29,4 @@ const portfolioData = {
   image: "/assets/ThisPageImage.png",
 };
 
-export { bambaData, shipMathData, portfolioData };
+export {sigueTuMiedoData, bambaData, shipMathData, portfolioData };
