@@ -1,9 +1,9 @@
-const bambaData = {
+const SigueTuMiedoData = {
   title: "Sigue tu Miedo | Demo",
   subtitle: "Unity game made",
   linkTo: "Link to Itch.io",
   link: "https://julitopazzagliagmailcom.itch.io/sigue-tu-miedo",
-  image: "/assets/BambaImage.png",
+  image: "/assets/SigueTuMiedo.png",
 };
 
 const bambaData = {
