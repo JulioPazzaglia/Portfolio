@@ -20,6 +20,7 @@ import {
 } from "../../public/data/interestData";
 
 import {
+  sigueTuMiedoData,
   bambaData,
   shipMathData,
   portfolioData,
@@ -36,6 +37,15 @@ export default function Home() {
         className='w-full px-10 md:px-40 grid grid-cols-3 gap-y-20 my-40 pt-40 z-10'
         id='projects'
       >
+          <div className='col-start-1 col-span-3 md:col-span-2'>
+          <ProjectLabelLeft
+            title={sigueTuMiedoData.title}
+            subtitle={sigueTuMiedoData.subtitle}
+            linkto={sigueTuMiedoData.linkTo}
+            link={sigueTuMiedoData.link}
+            image={sigueTuMiedoData.image}
+          />
+        </div>
         <div className='col-start-1 md:col-start-2 col-span-3'>
           <ProjectLabelRight
             title={bambaData.title}
