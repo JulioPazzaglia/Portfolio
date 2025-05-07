@@ -1,4 +1,12 @@
 const bambaData = {
+  title: "Sigue tu Miedo | Demo",
+  subtitle: "Unity game made",
+  linkTo: "Link to Itch.io",
+  link: "https://julitopazzagliagmailcom.itch.io/sigue-tu-miedo",
+  image: "/assets/BambaImage.png",
+};
+
+const bambaData = {
   title: "BAMBA | Finanzas Agro",
   subtitle: "Landing page on contract work",
   linkTo: "Link to website",
