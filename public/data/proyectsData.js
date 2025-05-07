@@ -1,4 +1,4 @@
-const SigueTuMiedoData = {
+const sigueTuMiedoData = {
   title: "Sigue tu Miedo | Demo",
   subtitle: "Unity game made",
   linkTo: "Link to Itch.io",
