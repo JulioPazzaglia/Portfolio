@@ -49,7 +49,7 @@ export default function ContactMe() {
             />
           </Link>
           <Link
-            href='https://drive.google.com/uc?export=download&id=1HgaFKYd4sBOWrvT1y2RKW4RPwmcu2Pec'
+            href='https://drive.google.com/file/d/1mDgmLC3M2ph9xt02FbhPf1qrAmX3joke/view?usp=drive_link'
             target='_blank'
             className='px-2'
           >
