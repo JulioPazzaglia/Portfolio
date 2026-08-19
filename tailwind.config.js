@@ -1,34 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./data/**/*.{js,jsx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
-        baseGreen: "rgba(98, 219, 175, 0.3)",
-        middleGreen: "rgba(98, 219, 175, 0.04)",
+        ink: "var(--color-ink)",
+        paper: "var(--color-paper)",
+        panel: "var(--color-panel)",
+        muted: "var(--color-muted)",
+        accent: "var(--color-accent)",
+        line: "var(--color-line)",
       },
-      rotate: {
-        135: "135deg",
+
+      fontFamily: {
+        display: ["var(--font-display)", "sans-serif"],
+        body: ["var(--font-body)", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
       },
-      animation: {
-        fade: "fadeOut 2s ease-in-out infinite",
+
+      boxShadow: {
+        window: "8px 8px 0 0 var(--color-shadow)",
+        "window-sm": "5px 5px 0 0 var(--color-shadow)",
+        "window-pressed": "3px 3px 0 0 var(--color-shadow)",
       },
-      // that is actual animation
-      keyframes: (theme) => ({
-        fadeOut: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
-        },
-      }),
+
+      borderWidth: {
+        3: "3px",
+      },
     },
   },
   plugins: [],

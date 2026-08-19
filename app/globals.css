@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ink: #141414;
+  --color-paper: #f4f2ec;
+  --color-panel: #f4f2ec;
+  --color-muted: #6b6a66;
+  --color-accent: #d8481e;
+  --color-line: #141414;
+  --shadow-hard: 8px 8px 0 0 #141414;
+  --color-backgroundlines: #14141412;
+  --color-shadow: #303030;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  background-image:
+    linear-gradient(var(--color-backgroundlines) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-backgroundlines) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+::selection {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.flip-scene {
+  perspective: 1600px;
+}
+
+.flip-card {
+  position: relative;
+  display: grid;
+  transform-style: preserve-3d;
+  transition: transform 300ms ease;
+}
+
+.flip-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-face {
+  grid-column: 1;
+  grid-row: 1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-face-back {
+  transform: rotateY(180deg);
+}
+
+/* Debajo del breakpoint sm de Tailwind: sin flip, solo el front. */
+@media (max-width: 639px) {
+  .flip-card {
+    transform: none !important;
+  }
+
+  .flip-face-back {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-ink: #f4f2ec;
+    --color-paper: #141414;
+    --color-panel: #202020;
+    --color-muted: #aaa9a3;
+    --color-accent: #ff6b3d;
+    --color-line: #f4f2ec;
+    --color-backgroundlines: #72707012;
+    --color-shadow: #d6d6d6;
+  }
+}

@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Julio Pazzaglia — Portfolio
 
-## Getting Started
+Portfolio rediseñado con identidad primaria de **Game Designer & Developer**
+y secundaria de **Full Stack Web Developer**, con un lenguaje visual de
+interfaz retro de computadora (ventanas con barra de título, bordes gruesos,
+paleta blanco/negro/gris con un acento).
 
-First, run the development server:
+## Cómo correrlo
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Para producción
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+Listo también para deployar directo en Vercel (`vercel deploy`).
 
-To learn more about Next.js, take a look at the following resources:
+## Estructura
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+app/
+  layout.js       Metadata, SEO, fuentes (Space Grotesk, Inter, JetBrains Mono)
+  page.js         Ensambla todas las secciones
+  globals.css     Reset, grilla de fondo, accesibilidad (focus, reduced-motion)
+components/
+  ui/             WindowFrame, Button, Badge — el sistema de diseño reutilizable
+  navigation/     Navbar (con menú mobile accesible)
+  hero/           Hero
+  projects/       ProjectGrid (con filtro por categoría) + ProjectCard
+  about/          AboutSection + SkillsSection
+  contact/        ContactSection + CopyEmailButton
+data/
+  projects.js     Toda la info de proyectos vive acá — para agregar uno nuevo,
+                  sumá un objeto a este array, no toques los componentes.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Pendiente / a tu criterio
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- No incluí `favicon.ico` ni imágenes de proyectos (no las tenía disponibles) —
+  las tarjetas de proyecto son 100% texto/tipografía por ahora. Se puede sumar
+  un campo `image` a `data/projects.js` y renderizarlo en `ProjectCard` si querés.
+- Los proyectos "Bamba" y "Ship Math" del portfolio anterior no están incluidos.
+- No pude correr `npm install` / `npm run build` en este entorno (sin acceso a
+  red), así que probalo localmente antes de pushear a producción.
