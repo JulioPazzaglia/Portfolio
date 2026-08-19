@@ -23,9 +23,9 @@ export const projects = [
         "https://store.steampowered.com/app/5021570/Laboratorio_de_Videojuegos_Demo/",
     },
     featured: true,
-    codeLanguage: "text",
-    codeDescription: "Concepcion y explicacion del marco pedagogico.",
-    codeSnippet: `  El Laboratorio de Videojuegos
+    codeLanguage: "cpp",
+    codeDescription: "Concepción y explicación del marco pedagógico.",
+    codeSnippet: `El Laboratorio de Videojuegos
   busca enseñar conceptos de diseño 
   de juegos y diseño de niveles brindando 
   una plataforma donde chicos, adolescentes 
@@ -59,9 +59,7 @@ export const projects = [
     featured: true,
     codeLanguage: "csharp",
     codeDescription: "Enemy Pathfinding y Navigation.",
-    codeSnippet: `protected void Update()
-    {
-        if (m_targetLife != null &&
+    codeSnippet: `if (m_targetLife != null &&
          m_targetLife.m_isAlive)
         {
           m_navAgent.SetDestination(m_target.position);

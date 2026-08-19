@@ -13,7 +13,6 @@
   --color-backgroundlines: #14141412;
   --color-shadow: #303030;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -97,6 +96,7 @@ a {
     scroll-behavior: auto !important;
   }
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-ink: #f4f2ec;
